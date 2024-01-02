@@ -7,5 +7,5 @@ export default function appendToEachArrayValue(array, appendString) {
     temp.push(appendString + idx);
   }
 
-  return array;
+  return temp;
 }
