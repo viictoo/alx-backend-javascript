@@ -1,6 +1,5 @@
 //  for of does not give access to idx of elems: disable es6
-/* eslint no-param-reassign: ["error",
-{ "props": true, "ignorePropertyModificationsFor": ["array"] }] */
+/* eslint-disable */
 export default function appendToEachArrayValue(array, appendString) {
   // let i = 0;
   // (const [i, el] of myArr.entries())
