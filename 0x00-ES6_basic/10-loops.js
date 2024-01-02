@@ -1,11 +1,10 @@
 /* eslint-disable */
 //  for of does not give access to idx of elems: disable es6
 export default function appendToEachArrayValue(array, appendString) {
-  let i = 0;
-  for (const idx of array.entries()) {
+  const temp = [];
+  for (const idx of array) {
   // for (const [i, idx] of array.entries()) {
-    array[i] = appendString + idx;
-    i += 1;
+    temp.push(appendString + idx);
   }
 
   return array;
