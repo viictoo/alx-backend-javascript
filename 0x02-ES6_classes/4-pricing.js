@@ -29,13 +29,10 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this._amount} ${this._currency.displayFullCurrency()}`;
+    return `${this.amount} ${this.currency.displayFullCurrency()}`;
   }
 
   static convertPrice(amount, conversionRate) {
-    if (typeof amount !== typeof conversionRate !== 'number') {
-      throw TypeError('Value must be a Number');
-    }
     return amount * conversionRate;
   }
 }
