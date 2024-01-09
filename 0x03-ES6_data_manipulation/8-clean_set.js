@@ -11,9 +11,10 @@
 //   }
 //   return str.join(separator);
 // }
+// complete solution
 export default function cleanSet(set, startString) {
   if (!startString || typeof startString !== 'string' || typeof set !== 'object') return '';
-  if (startString === '') return '';
+  // if (startString === '') return '';
   return [...set]
     .filter((el) => typeof el === 'string' && el.toLowerCase().startsWith(startString.toLowerCase()))
     .map((el) => el.slice(startString.length))
